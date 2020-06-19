@@ -1,4 +1,4 @@
-from stack_practice import Stack
+from stack.stack_practice import Stack
 
 
 def revstring(mystr):
