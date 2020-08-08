@@ -1,4 +1,4 @@
-from stack.stack_practice import Stack
+from stack_p.stack_practice import Stack
 
 
 def parChecker(str):
