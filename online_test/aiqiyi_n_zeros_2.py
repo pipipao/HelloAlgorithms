@@ -18,3 +18,4 @@ for i in range(1, n + 1):
 print(mem[n])
 print(counter)
 # 8222838654177922817725562880000000
+
