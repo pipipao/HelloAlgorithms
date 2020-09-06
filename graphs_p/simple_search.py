@@ -1,5 +1,5 @@
 from graphs_p.graph import Graph, Vertex
-
+from graphs_p.graph_factory import StarGraph
 
 def DFS(graph, s):
     stack = [s]
@@ -23,7 +23,10 @@ if __name__ == '__main__':
         g.addVertex(i)
     g.addEdge(0, 1, 5)
     g.addEdge(0, 5, 2)
-    g.addEdge(1, 2, 1)
+    g.addEdge(5, 2, 1)
     g.addEdge(2, 3, 0)
     g.addEdge(0, 4, 0)
     DFS(g, g.getVertex(0))
+    print('/n')
+    dg=StarGraph.getDFSInstance()
+    DFS(dg,dg.getVertex(1))

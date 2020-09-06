@@ -1,5 +1,5 @@
 from graphs_p.graph import Graph, Vertex
-
+from graphs_p.graph_factory import StarGraph,RecGraph
 
 def BFS(graph, s):
     queue = [s]
@@ -24,3 +24,6 @@ if __name__ == '__main__':
     g.addEdge(2, 3, 0)
     g.addEdge(0, 4, 0)
     BFS(g, g.getVertex(0))
+    sg=StarGraph.getBFSInstance()
+    print('/n')
+    BFS(sg,sg.getVertex(1))
