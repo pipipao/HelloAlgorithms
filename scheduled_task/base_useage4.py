@@ -10,7 +10,7 @@ if __name__ == '__main__':
     # 采用非阻塞的方式
 
     # 采用date的方式，在特定时间里执行一次
-    scheduler.add_job(job, 'date', run_date='2018-09-21 15:53:00')
+    scheduler.add_job(job, 'date', run_date='2020-12-11 11:02:00')
     # 这是一个独立的线程
     scheduler.start()
 
