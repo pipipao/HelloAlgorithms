@@ -18,6 +18,7 @@ from datetime import datetime
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.schedulers.blocking import BlockingScheduler
 import tkinter as tk
+from multiprocessing import Process
 
 
 class Application(tk.Frame):
@@ -40,10 +41,14 @@ class Application(tk.Frame):
     def say_hi(self):
         print("hi there, everyone!")
 
-def show(root):
+def show():
     root = tk.Tk()
     app = Application(master=root)
     app.mainloop()
+
+def task():
+    p=Process(target=show)
+    p.start()
 
 if __name__ == '__main__':
 
@@ -51,7 +56,7 @@ if __name__ == '__main__':
 
     scheduler=BackgroundScheduler()
     # scheduler=BlockingScheduler()
-    scheduler.add_job(show,"date",run_date=datetime(2020,12,11,11,27,20))
+    scheduler.add_job(show,"date",run_date=datetime(2020,12,15,17,47,2))
     scheduler.start()
     while True:
         pass
