@@ -7,5 +7,5 @@ class Solution:
         ans=len(nums)
         while left<right:
             mid=int((left+right)/2)
-            if()
+            pass
 
