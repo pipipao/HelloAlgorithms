@@ -22,10 +22,7 @@ class StarGraph:
         g.addEdge(1, 3)
         g.addEdge(2, 3)
         g.addEdge(2, 5)
-
-
         g.addEdge(3, 3)
-
         g.addEdge(4, 1)
         g.addEdge(4, 5)
         g.addEdge(5, 3)
